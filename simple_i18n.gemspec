@@ -14,5 +14,7 @@ Gem::Specification.new do |s|
     'https://github.com/xtrasimplicity/simple_i18n'
   s.license       = 'MIT'
 
+  s.required_ruby_version = '>= 2.0.0'
   s.add_development_dependency 'rspec'
+
 end
