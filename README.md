@@ -1,6 +1,6 @@
 # simple_i18n
 Simple internationalisation (i18n) for Ruby. 
-[![Build Status](https://travis-ci.org/xtrasimplicity/simple_i18n.svg?branch=Develop)](https://travis-ci.org/xtrasimplicity/simple_i18n)
+[![Build Status](https://travis-ci.org/xtrasimplicity/simple_i18n.svg?branch=develop)](https://travis-ci.org/xtrasimplicity/simple_i18n)
 
 ## Installation
 1. Add `gem 'simple_i18n', '~> 0.0'`to your application's Gemfile.
