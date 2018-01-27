@@ -13,4 +13,6 @@ Gem::Specification.new do |s|
   s.homepage    =
     'https://github.com/xtrasimplicity/simple_i18n'
   s.license       = 'MIT'
+
+  s.add_development_dependency 'rspec'
 end
