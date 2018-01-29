@@ -8,12 +8,16 @@ Simple internationalisation (i18n) for Ruby.
 ## Configuration
 You can define configuration in your application, using the following syntax:
 ```
-SimpleI18n.config do |c|
-   c.available_locales = [:en, :de, :fr]
+SimpleI18n.configuration do |c|
+   c.available_locales = [:en, :fr, :de]
    c.base_locale_path = 'locales' # The relative base path to the desired locale directory.
 end
 ```
-You can also define this configuration in YAML format, in a `.simple_i18n` file in your application's root directory.
+You can also define this configuration in YAML format, in a `.simple_i18n` file in your application's root directory. Note that symbols aren't able to be used. i.e.
+```
+available_locales: ['en', 'fr', 'de']
+base_locale_path: 'locales_dir'
+```
 
 Simple_i18n expects the locales directory to have the following structure. Each `*.yml` file within each locale directory is automatically included, once the `available_locales` configuration variable has been configured to include the locale.
 ```
