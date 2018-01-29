@@ -13,6 +13,23 @@ SimpleI18n.config do |c|
    c.base_locale_path = 'locales' # The relative base path to the desired locale directory.
 end
 ```
+You can also define this configuration in YAML format, in a `.simple_i18n` file in your application's root directory.
+
+Simple_i18n expects the locales directory to have the following structure. Each `*.yml` file within each locale directory is automatically included, once the `available_locales` configuration variable has been configured to include the locale.
+```
+ - locales
+   - :en
+     - help.yml
+   - :fr
+     - help.html
+```
+
+Alternatively, for smaller applications, you can use a more rails-esque approach, storing each locale's translation file (i.e. `de.yml`) in the root of the `base_locale_path`, such as:
+```
+ - locales
+   - de.yml
+   - fr.yml
+```
 
 ## Contributing
 
