@@ -13,15 +13,15 @@ describe 'SimpleI18n.configuration' do
     end
   end
 
-  describe '.locale_path' do
+  describe '.base_locale_path' do
     it 'stores the locale path' do
-      locale_path = '/path/to/locales'
+      base_locale_path = '/path/to/locales'
 
       SimpleI18n.configuration do |c|
-        c.locale_path = locale_path
+        c.base_locale_path = base_locale_path
       end
 
-      expect(SimpleI18n.configuration.locale_path).to eq(locale_path)
+      expect(SimpleI18n.configuration.base_locale_path).to eq(base_locale_path)
     end
   end
 end

@@ -10,7 +10,7 @@ You can define configuration in your application, using the following syntax:
 ```
 SimpleI18n.config do |c|
    c.available_locales = [:en, :de, :fr]
-   c.locale_path = 'locales'
+   c.base_locale_path = 'locales' # The relative base path to the desired locale directory.
 end
 ```
 
